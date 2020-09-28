@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="text-align: center;">Dashboard</h1>
+<div style="text-align: center;"><%= link_to "Admin Dashboard", admin_dashboard_path if current_user.admin %></div>
+<div style="text-align: center;"><%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
+</body>
+</html>
