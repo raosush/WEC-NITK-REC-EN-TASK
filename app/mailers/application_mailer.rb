@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
   # The gmail address specified here will be used to send emails to recipients.
-  default from: '<gmail_address>'
+  default from: Rails.application.credentials.email[:username]
 end
