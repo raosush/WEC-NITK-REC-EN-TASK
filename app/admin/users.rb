@@ -21,6 +21,7 @@ ActiveAdmin.register User do
   filter :sign_in_count
   filter :created_at
   filter :age
+  filter :location
   filter :admin
 
   form do |f|
